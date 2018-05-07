@@ -1,16 +1,16 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-#include "suff.hpp"
+#include "suffix.hpp"
 
 int main()
 {
 
 std::string x ="banana";
-std::vector<suffarray::suffix>y;
-y=suffarray::getsuffixes(x);
-suffarray::printsuffixesvector(y);
-std::vector<int>z=suffarray::suffixarray(y);
-suffarray::printsuffixarray(z);
+std::vector<SA::suffix>y;
+y=SA::getsuffixes(x);
+SA::printsuffixesvector(y);
+std::vector<int>z=SA::suffixarray(y);
+SA::printsuffixarray(z);
 
 }
