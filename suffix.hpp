@@ -9,12 +9,12 @@ struct suffix
     std::string suff;
 };
 
-std::vector<suffix> getsuffixes(std::string pattern)
+std::vector<suffix> getsuffixes(std::string text)
 {
     std::vector<suffix> v;
-    for (int i = 0; i < pattern.size(); i++)
+    for (int i = 0; i < text.size(); i++)
     {
-        std::string str = pattern.c_str() + i ;
+        std::string str = text.c_str() + i ;
         suffix suf{ i , str };
         v.push_back( suf );
     }
@@ -28,8 +28,9 @@ std::vector<suffix> getsuffixes(std::string pattern)
 
 }
 
-std::vector<int> suffixarray (std::vector<suffix>s)
+std::vector<int> suffixarray (std::string text)
 {
+    std::vector<suffix>s=getsuffixes(text);
     std::vector<int>v;
     for (int i=0;i<s.size();i++)
     { 
@@ -55,5 +56,6 @@ void printsuffixesvector(std::vector<suffix> x)
         std::cout << "the index is "<< x[i].index << "th"<<" suffix :"<<x[i].suff << std::endl;
     }
 }
+
 
 }
