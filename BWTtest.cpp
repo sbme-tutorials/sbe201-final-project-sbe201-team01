@@ -8,5 +8,8 @@ int main()
     std::string x = "banana";
     std::vector<char> y;
     y = BWT::LAST_COLUMN(x);
-   SA::printsuffixesvector(y);
+   for(int i=0;i<y.size();i++)
+   {
+       std::cout<<y[i]<<std::endl;
+   }
     }
