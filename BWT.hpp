@@ -8,10 +8,10 @@ struct suffix
     int index;
     std::string suff;
 };
-std::vector<char> *LAST_COLUMN(std::string text)
+std::vector<char> LAST_COLUMN(std::string text)
 {
     int n = text.size();
-    std::vector<char> BWT_arr = (std::vector<char> *)malloc(text.size() * sizeof(char));
+    std::vector<char> BWT_arr(n) ;
     std::vector<suffix> SuffixesArray = SA::getsuffixes(text);
     for (int i = 0; i < n; i++)
     {
