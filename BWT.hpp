@@ -1,3 +1,6 @@
+#ifndef BWT_HPP
+#define BWT_HPP
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -41,3 +44,6 @@ void print(std::vector<BWTLF> v)
 
 
 }
+
+
+#endif

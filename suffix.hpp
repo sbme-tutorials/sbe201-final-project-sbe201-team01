@@ -1,3 +1,6 @@
+#ifndef SUFFIX_HPP
+#define SUFFIX_HPP
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -59,3 +62,6 @@ void printsuffixesvector(std::vector<suffix> x)
 
 
 }
+
+
+#endif
