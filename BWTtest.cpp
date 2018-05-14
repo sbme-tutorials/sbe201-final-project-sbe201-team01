@@ -6,10 +6,7 @@
 int main()
 {
     std::string x = "banana";
-    std::vector<char> y;
-    y = BWT::LAST_COLUMN(x);
-   for(int i=0;i<y.size();i++)
-   {
-       std::cout<<y[i]<<std::endl;
-   }
-    }
+    std::vector<BWT::BWTLF> v;
+    v = BWT::bwt(x);
+    BWT::print(v);
+}
