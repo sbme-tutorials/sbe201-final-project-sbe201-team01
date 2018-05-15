@@ -23,11 +23,11 @@ std::vector<BWTLF> bwt(std::string text)
     suffarray = SA::suffixarray(text);
     for (int i = 0; i < n; i++)
     {
-        int z=suffarray[i];
+        int z = suffarray[i];
         int x = (z - 1 + n) % n;
 
         char y = text[x];
-        BWTLF burrow{ y ,i };
+        BWTLF burrow{y, i};
         BWT_Array.push_back(burrow);
     }
     return BWT_Array;
@@ -37,8 +37,8 @@ void print(std::vector<BWTLF> v)
 {
     for (int i = 0; i < v.size(); i++)
     {
-         
-        std::cout << "the index is "<< v[i].x << v[i].index<<std::endl;
+
+        std::cout << "the index is " << v[i].x << v[i].index << std::endl;
     }
 }
 
@@ -46,19 +46,14 @@ std::vector<BWTLF> firstcolumn(std::string text)
 {
     std::vector<BWTLF> v;
     v = bwt(text);
-   std::sort( v.begin() , v.end() , []( BWTLF &a , BWTLF &b )
-{
+    std::sort(v.begin(), v.end(), [](BWTLF &a, BWTLF &b) {
         return a.x < b.x;
-        for (int i = 0; i < v.size(); i++)
-        {
-            v[i].index = i;
-        }
-        return v;
+    });
+    
+   
+    return v;
 }
 
-
-
 }
-
 
 #endif
