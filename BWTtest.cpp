@@ -9,5 +9,4 @@ int main()
     std::vector<char> y;
     y = BWT::LAST_COLUMN(x);
     SA::printsuffixesvector(y);
-    return 0;
 }
