@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-#include "BWT.hpp"
+#include "b.hpp"
 #include "suffix.hpp"
 int main()
 {
-    std::string x = "banana";
+    std::string x = "banana$";
     std::vector<BWT::BWTLF> v;
-    v = BWT::bwt(x);
+    v = BWT::firstcolumn(x);
     BWT::print(v);
 }

@@ -6,7 +6,7 @@
 int main()
 {
 
-std::string x ="banana";
+std::string x ="banana$";
 std::vector<SA::suffix>y;
 y=SA::getsuffixes(x);
 SA::printsuffixesvector(y);
