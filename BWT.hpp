@@ -88,16 +88,19 @@ std::vector<char> first_column(std::string text)
     return z;
 }
 
-int bwt_mattching(std::vector<BWTLF> last_column, std::vector<BWTLF> first_column, std::vector<int> lasttofirst, std::string text)
+void bwt_matching(std::vector<BWTLF> last_column, std::vector<BWTLF> first_column, std::vector<int> lasttofirst, std::string pattern)
 {
+    int n=last_column.size()
     int top = 0;
-    int bottom = first_column[text.size()] - 1;
-    for (int i = 0, i < first_column.size(), i++)
-        symbol = text[0];
-    {
-        if (symbol == first_cloum[i])
-            top = first_cloum[i];
-    }
+    int bottom = n-1;
+while(top<=bottom)
+{
+if(!empty.pattern())
+{
+char symbol =pattern.at()
+}
+}
+
 }
 } // namespace BWT
 
