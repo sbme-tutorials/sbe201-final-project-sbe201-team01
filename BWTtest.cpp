@@ -6,7 +6,9 @@
 int main()
 {
     std::string x = "banana$";
-    std::vector<BWT::BWTLF> v;
-    v = BWT:: firstcolumn(x);
+    std::vector<BWT::BWTLF> v, z;
+    z = BWT::bwt(x);
+    v = BWT::firstcolumn(x);
     BWT::print(v);
+    BWT::print(z);
 }
