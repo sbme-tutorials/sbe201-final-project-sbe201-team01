@@ -49,11 +49,20 @@ std::vector<BWTLF> firstcolumn(std::string text)
     std::sort(v.begin(), v.end(), [](BWTLF &a, BWTLF &b) {
         return a.x < b.x;
     });
-    
-   
+
     return v;
 }
+std::vector<int> lasttofirst(std::vector<BWTLF> firstcolumn)
 
+{
+    int j;
+    std::vector<int> LF;
+    for (int i = 0; i < firstcolumn.size(); i++)
+    {
+        j = firstcolumn[i].index;
+        LF[j] = i;
+    }
+}
 }
 
 #endif
