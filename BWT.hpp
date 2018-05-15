@@ -42,6 +42,21 @@ void print(std::vector<BWTLF> v)
     }
 }
 
+std::vector<BWTLF> firstcolumn(std::string text)
+{
+    std::vector<BWTLF> v;
+    v = bwt(text);
+   std::sort( v.begin() , v.end() , []( BWTLF &a , BWTLF &b )
+{
+        return a.x < b.x;
+        for (int i = 0; i < v.size(); i++)
+        {
+            v[i].index = i;
+        }
+        return v;
+}
+
+
 
 }
 
