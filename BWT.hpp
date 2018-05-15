@@ -49,7 +49,7 @@ std::vector<BWTLF> firstcolumn(std::string text)
     std::sort(v.begin(), v.end(), [](BWTLF &a, BWTLF &b) {
         return a.x < b.x;
     });
-    //lmfrod 3wza lama a3ml sort hena l bw_array en ykon 3ndy el first column belorginal index bta3o 
+    //lmfrod 3wza lama a3ml sort hena l bw_array en ykon 3ndy el first column belorginal index bta3o
     //lakn ana bytl3ly el index beltrteb 3ady lakn elfirstcolumn sorted sa7 wmsh 3rfa a lsbb
 
     return v;
@@ -65,6 +65,16 @@ std::vector<int> lasttofirst(std::vector<BWTLF> firstcolumn)
         LF[j] = i;
     }
 }
+int bwt_mattching(std::vector<BWTLF> last_column, std::vector<BWTLF> first_column, std::vector<int> lasttofirst, std::string text)
+{
+    int top = 0;
+    int bottom = last_column[text.size()] - 1  ;
+    while top < bottom
+    {
+        symbol = text[i];
+        
+    }
 }
+} // namespace BWT
 
 #endif

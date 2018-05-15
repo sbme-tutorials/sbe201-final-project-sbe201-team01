@@ -1,6 +1,3 @@
-#ifndef SUFFIX_HPP
-#define SUFFIX_HPP
-
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -12,12 +9,12 @@ struct suffix
     std::string suff;
 };
 
-std::vector<suffix> getsuffixes(std::string text)
+std::vector<suffix> getsuffixes(std::string pattern)
 {
     std::vector<suffix> v;
-    for (int i = 0; i < text.size(); i++)
+    for (int i = 0; i < pattern.size(); i++)
     {
-        std::string str = text.c_str() + i ;
+        std::string str = pattern.c_str() + i ;
         suffix suf{ i , str };
         v.push_back( suf );
     }
@@ -31,9 +28,8 @@ std::vector<suffix> getsuffixes(std::string text)
 
 }
 
-std::vector<int> suffixarray (std::string text)
+std::vector<int> suffixarray (std::vector<suffix>s)
 {
-    std::vector<suffix>s=getsuffixes(text);
     std::vector<int>v;
     for (int i=0;i<s.size();i++)
     { 
@@ -53,15 +49,11 @@ void printsuffixarray (std::vector<int>x)
 
 void printsuffixesvector(std::vector<suffix> x)
 {
-    for (int i = 0; i < x.size(); i++)
+    for (int  2      = 0; i < x.size(); i++)
     {
          
         std::cout << "the index is "<< x[i].index << "th"<<" suffix :"<<x[i].suff << std::endl;
     }
 }
 
-
 }
-
-
-#endif

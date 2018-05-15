@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-#include "b.hpp"
+#include "BWT.hpp"
 #include "suffix.hpp"
 int main()
 {
