@@ -49,6 +49,8 @@ std::vector<BWTLF> firstcolumn(std::string text)
     std::sort(v.begin(), v.end(), [](BWTLF &a, BWTLF &b) {
         return a.x < b.x;
     });
+    //lmfrod 3wza lama a3ml sort hena l bw_array en ykon 3ndy el first column belorginal index bta3o 
+    //lakn ana bytl3ly el index beltrteb 3ady lakn elfirstcolumn sorted sa7 wmsh 3rfa a lsbb
 
     return v;
 }
