@@ -33,6 +33,17 @@ std::vector<BWTLF> bwt(std::string text)
     return BWT_Array;
 }
 
+std::vector<char> last_column(std::string text)
+{
+    std::vector<BWTLF> v = bwt(text);
+    std::vector<char> z;
+    for (int i = 0; i < v.size(); i++)
+    {
+        z.push_back(v[i].index);
+    }
+    return z;
+}
+
 void print(std::vector<BWTLF> v)
 {
     for (int i = 0; i < v.size(); i++)
@@ -61,21 +72,31 @@ std::vector<int> lasttofirst(std::vector<BWTLF> firstcolumn)
     std::vector<int> LF;
     for (int i = 0; i < firstcolumn.size(); i++)
     {
-        j = firstcolumn[i].index;
+        j = firstcolumn[i].x;
         LF[j] = i;
     }
 }
+
+std::vector<char> first_column(std::string text)
+{
+    std::vector<BWTLF> v = firstcolumn(text);
+    std::vector<char> z;
+    for (int i = 0; i < v.size(); i++)
+    {
+        z.push_back(v[i].x);
+    }
+    return z;
+}
+
 int bwt_mattching(std::vector<BWTLF> last_column, std::vector<BWTLF> first_column, std::vector<int> lasttofirst, std::string text)
 {
     int top = 0;
-    int bottom =first_column[text.size()] - 1  ;
-     for ( int i= 0 , i< first_column.size(),i++ )
-     symbol = text[0];
+    int bottom = first_column[text.size()] - 1;
+    for (int i = 0, i < first_column.size(), i++)
+        symbol = text[0];
     {
-       if ( symbol == first_cloum[i])
-       top = first_cloum[i];
-
-
+        if (symbol == first_cloum[i])
+            top = first_cloum[i];
     }
 }
 } // namespace BWT
