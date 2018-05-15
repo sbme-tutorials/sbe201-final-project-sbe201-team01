@@ -68,11 +68,14 @@ std::vector<int> lasttofirst(std::vector<BWTLF> firstcolumn)
 int bwt_mattching(std::vector<BWTLF> last_column, std::vector<BWTLF> first_column, std::vector<int> lasttofirst, std::string text)
 {
     int top = 0;
-    int bottom = last_column[text.size()] - 1  ;
-    while top < bottom
+    int bottom =first_column[text.size()] - 1  ;
+     for ( int i= 0 , i< first_column.size(),i++ )
+     symbol = text[0];
     {
-        symbol = text[i];
-        
+       if ( symbol == first_cloum[i])
+       top = first_cloum[i];
+
+
     }
 }
 } // namespace BWT
