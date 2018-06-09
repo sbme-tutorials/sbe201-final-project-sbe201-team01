@@ -50,11 +50,10 @@ Now we will discuss the algorithm that we used suffix array in, which is Burrows
 ### What is Burrows Wheeler Algorithm?
 It's a data transformation algorthim for data which rearranges a character string into runs of similar characters in an alphabetically way, it's also a  reversible operation without needing any more functions or data to restore the original string wich make it efficient in many applications. The following example will explain the steps to build the algorithm.
 ##### **EXAMPLE**
-```c++
 Using the word "mutation$" as an example.
        
  1. we cycle the given word (string) to get all the cyclic combinations.
-
+```c++
          $   m                            mutation$
        n       u       Cyclic rotations   $mutation
      o           t        ---------->     n$mutatio 
@@ -64,8 +63,9 @@ Using the word "mutation$" as an example.
                                           ation$mut
                                           tation$mu
                                           utation$m
-
+```
  2. then we sort the cyclic combinations alphabetically.
+```c++
   mutation$                             $mutation
   $mutation                             ation$mut
   n$mutatio                             ion$mutat
@@ -75,9 +75,10 @@ Using the word "mutation$" as an example.
   ation$mut                             tation$mu 
   tation$mu                             tion$muta
   utation$m                             utation$m
-
- 3. Finally, we get the last coloumn, so the the O/P of the transformation will be **ntt$oiuam**.
-
+```
+ 3. Finally, we get the last coloumn.
+```c++
+the O/P of the transformation will be {**ntt$oiuam**}.
 
 ```
 
