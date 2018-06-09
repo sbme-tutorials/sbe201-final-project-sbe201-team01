@@ -7,10 +7,10 @@ We found that the simplest way to construct our code to perfectly do the functio
 A suffix array is a sorted array of all suffixes of a given string.
 - first, we divide the word (string ) into parts, each part is smaller that the previous one with one letter.
 - then we give each of these parts an index in the array.
-- then we sort these parts alphabetically to have our suffix.
-**EXAMPLE**
+- then we sort these parts alphabetically to have our suffix. The next example will clear how it can be constructed for an array of strings.
+#### **EXAMPLE**
 ```c++
-Let the given string be "banana".
+Let the given string be "mutation".
 
 0 mutation                         3 ation
 1 utation    Sort the Suffixes     5 ion
