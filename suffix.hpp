@@ -1,3 +1,7 @@
+#ifndef suffix_HPP
+#define suffix_HPP
+
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -14,46 +18,45 @@ std::vector<suffix> getsuffixes(std::string pattern)
     std::vector<suffix> v;
     for (int i = 0; i < pattern.size(); i++)
     {
-        std::string str = pattern.c_str() + i ;
-        suffix suf{ i , str };
-        v.push_back( suf );
+        std::string str = pattern.c_str() + i;
+        suffix suf{i, str};
+        v.push_back(suf);
     }
 
-    std::sort( v.begin() , v.end() , []( suffix &a , suffix &b ){
-        return a.suff < b.suff ;
+    std::sort(v.begin(), v.end(), [](suffix &a, suffix &b) {
+        return a.suff < b.suff;
     });
 
     return v;
-
-
 }
 
-std::vector<int> suffixarray (std::vector<suffix>s)
+std::vector<int> suffixarray(std::vector<suffix> s)
 {
-    std::vector<int>v;
-    for (int i=0;i<s.size();i++)
-    { 
-        int index =s[i].index;
+    std::vector<int> v;
+    for (int i = 0; i < s.size(); i++)
+    {
+        int index = s[i].index;
         v.push_back(index);
     }
     return v;
 }
 
-void printsuffixarray (std::vector<int>x)
+void printsuffixarray(std::vector<int> x)
 {
-    for (int element : x )
+    for (int element : x)
 
-    std::cout << element << std::endl;
-
+        std::cout << element << std::endl;
 }
 
 void printsuffixesvector(std::vector<suffix> x)
 {
-    for (int  2      = 0; i < x.size(); i++)
+    for (int i = 0; i < x.size(); i++)
     {
-         
-        std::cout << "the index is "<< x[i].index << "th"<<" suffix :"<<x[i].suff << std::endl;
+
+        std::cout << "the index is " << x[i].index << "th"
+                  << " suffix :" << x[i].suff << std::endl;
     }
 }
-
 }
+
+#endif

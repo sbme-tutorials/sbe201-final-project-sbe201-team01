@@ -6,11 +6,11 @@
 int main()
 {
 
-std::string x ="banana$";
+std::string x ="banana";
 std::vector<SA::suffix>y;
 y=SA::getsuffixes(x);
 SA::printsuffixesvector(y);
-std::vector<int>z=SA::suffixarray(x);
+std::vector<int>z=SA::suffixarray(y);
 SA::printsuffixarray(z);
 
 }
