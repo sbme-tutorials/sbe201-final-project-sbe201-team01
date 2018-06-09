@@ -8,7 +8,7 @@ A suffix array is a sorted array of all suffixes of a given string.
 - first, we divide the word (string ) into parts, each part is smaller that the previous one with one letter.
 - then we give each of these parts an index in the array.
 - then we sort these parts alphabetically to have our suffix. The next example will clear how it can be constructed for an array of strings.
-#### **EXAMPLE**
+##### **EXAMPLE**
 ```c++
 Let the given string be "mutation".
 
@@ -23,6 +23,8 @@ Let the given string be "mutation".
 
 So the suffix array for "mutataion" is {3, 5, 0, 7, 6, 2, 4, 1}
 ```
+#### What is Burrow Wheeler Algorithm?
+
 ### Applications of our algorithm
 ()
 ## Instruction to compile and run the source code
