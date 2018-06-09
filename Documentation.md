@@ -64,6 +64,21 @@ Using the word "mutation$" as an example.
                                           ation$mut
                                           tation$mu
                                           utation$m
+
+2. then we sort the cyclic combinations alphabetically.
+  mutation$                             $mutation
+  $mutation                             ation$mut
+  n$mutatio                             ion$mutat
+  on$mutati    alphabetically           mutation$ 
+  ion$mutat    ------------->           n$mutatio
+  tion$muta       sorting               on$mutati
+  ation$mut                             tation$mu 
+  tation$mu                             tion$muta
+  utation$m                             utation$m
+
+3. Finally, we get the last coloumn for the alphabetically sorted array so the the O/P of the transformation will be **{ntt$oiuam}**.
+
+
 ```
 
 ## Applications of our algorithm
@@ -80,4 +95,12 @@ Using the word "mutation$" as an example.
 7. [Burrows – Wheeler Data Transform Algorithm](https://www.geeksforgeeks.org/burrows-wheeler-data-transform-algorithm/)
 8. [Burrows-Wheeler Transform](https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform)
 
-
+                                          mutation$
+                                          $mutation
+                                          n$mutatio 
+                                          on$mutati
+                                          ion$mutat
+                                          tion$muta
+                                          ation$mut
+                                          tation$mu
+                                          utation$m
