@@ -1,9 +1,9 @@
 # **Final Project Documentation**
 ## DNA mutations
 The main target of our projec is to detect teh abnormal DNA mismataches in patterns which ay be a mutation in the DNA, 
-### Used Algorithm
+## Used Algorithm
 We found that the simplest way to construct our code to perfectly do the function we need which is finding the mismatch in the patterns of the genome, is to use data structure and algorithms that were already built specially for searching patterns and construction of the data in a certain way, so we used *suffix arrays* and *Burrows Wheeler Algorithm*.
-#### What is suffix array?
+### What is suffix array?
 A suffix array is a sorted array of all suffixes of a given string.
 - first, we divide the word (string ) into parts, each part is smaller that the previous one with one letter.
 - then we give each of these parts an index in the array.
@@ -23,9 +23,9 @@ Let the given string be "mutation".
 
 So the suffix array for "mutataion" is {3, 5, 0, 7, 6, 2, 4, 1}
 ```
-#### What is Burrow Wheeler Algorithm?
+### What is Burrow Wheeler Algorithm?
 
-### Applications of our algorithm
+## Applications of our algorithm
 ()
 ## Instruction to compile and run the source code
 
