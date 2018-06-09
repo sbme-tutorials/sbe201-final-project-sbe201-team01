@@ -23,7 +23,7 @@ Let the given string be "mutation".
 
 So the suffix array for "mutataion" is {3, 5, 0, 7, 6, 2, 4, 1}
 ```
-### What is Burrow Wheeler Algorithm?
+### What is Burrows Wheeler Algorithm?
 
 ## Applications of our algorithm
 ()
