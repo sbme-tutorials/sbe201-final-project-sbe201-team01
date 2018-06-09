@@ -72,6 +72,7 @@ Using the word "mutation$" as an example.
 
 ## References:
 1. [Genome variations](http://www.genomenewsnetwork.org/resources/whats_a_genome/Chp4_1.shtml)
+<<<<<<< HEAD
 2. [Duchenne muscular dystrophy](https://en.wikipedia.org/wiki/Duchenne_muscular_dystrophy#DNA_test)
 3. [Phenylketonuria](https://science.howstuffworks.com/life/cellular-microscopic/dna8.htm)
 4. [other diseases](https://en.wikipedia.org/wiki/Genetic_testing#Specific_diseases)
@@ -91,3 +92,12 @@ Using the word "mutation$" as an example.
                                           tation$mu
                                           utation$m
 
+=======
+2. [Suffix array](https://www.geeksforgeeks.org/suffix-array-set-1-introduction/)
+3. [Phenylketonuria](https://science.howstuffworks.com/life/cellular-microscopic/dna8.htm)
+4. [other diseases](https://en.wikipedia.org/wiki/Genetic_testing#Specific_diseases)
+5. [crohn's disease](https://en.wikipedia.org/wiki/Crohn%27s_disease#Genetics)
+6. [Duchenne muscular dystrophy](https://en.wikipedia.org/wiki/Duchenne_muscular_dystrophy#DNA_test)
+
+
+>>>>>>> bcb69f77937c8bae0a32ef99ef0c927256edf988
