@@ -85,7 +85,7 @@ the O/P of the transformation will be {ntt$oiuam}.
 * We use the $ sign to indicate the end of the string which will help us when we reverse the transformation.
 * we use the last coloumn specially because of the **last to front property** which includes that when we have the last coloumn we can retore the whole string by sorting it, for exmaple when we sort the last column we can get the first coloumn of the BWT.
 
-#### Implementation Burrows Wheeler Algorthim using Suffix array
+### Implementation Burrows Wheeler Algorthim using Suffix array
 
 
 ## Applications of our algorithm
