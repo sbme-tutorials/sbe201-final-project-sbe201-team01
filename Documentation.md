@@ -21,6 +21,7 @@ Diagnostic testing can be performed before birth or at any time during a person'
 - **Duchenne muscular dystrophy:** Muscle weakness; frequent falls; difficulty with motor skills (running, hopping, jumping); progressive difficulty walking (ability to walk may be lost by age 12); fatigue; intellectual retardation (possible); skeletal deformities; chest and back (scoliosis); muscle deformities (contractures of heels, legs; pseudohypertrophy of calf muscles). **DNA testing** is used to confirm the diagnosis; The muscle-specific isoform of the dystrophin gene is composed of 79 exons, and DNA testing and analysis can usually identify the specific type of mutation of the exon or exons that are affected.
 
 - **Crohn's disease:** Inflammation confined to the colon; abdominal pain and bloody diarrhea; anal fistulae and peri-rectal abscesses can also occur.
+
  **Genetic mutations:** 
 ![](crohn.png)
 
