@@ -91,7 +91,7 @@ the O/P of the transformation will be {ntt$oiuam}.
 ```
 ###### **NOTE** 
 * We use the $ sign to indicate the end of the string which will help us when we reverse the transformation.
-* we use the last coloumn specially because of the **last to front property** which includes that when we have the last coloumn we can retore the whole string by sorting it, for exmaple when we sort the last column we can get the first coloumn of the BWT.( explained in details in the next paragrapgh)
+* we use the last coloumn specially because of the **last to front property** which includes that when we have the last coloumn we can retore the whole string by sorting it, for exmaple when we sort the last column we can get the first coloumn of the BWT.( explained in details in the next paragraph)
 
 ### Inverting Burrows Wheeler Transform
 A great advantage of using BWT is that we can get the original string by only having the last column of the transorfm, for example.
@@ -126,15 +126,12 @@ the BWT will be {ntt$oiuam}, If we sort it alphabetically we get the first colum
 ```
 - then if we add the last column beside the first two cloumns and sort them we will get the first three cloumns and so forth we can get the whole matrix or in other words the original string.
 
-
-### Implementation Burrows Wheeler Algorthim using Suffix array
-
 ## Applications of our algorithm
 **The main target of our project is to find if a certain pattern (which distinguish a disease as we mentioned before) is found in a given genome and also to get the number of repeats of this pattern ( if avaliable ).**
 In order to achieve this we:
 1. enter a given genome and divide it into suffixes to make the suffix array
 2. get the BWT (the last column) by applying this equation for each suffix **input_text[(suffix_arr[i] – 1 + n ) % n]** , where n is the number of elements in the suffix array.
-3. then we apply a search function to find the pattern in the genome and by that we can confirm if the disease that this pattern distinguish is active or not which is the target
+3. then we apply a search function to find the pattern in the genome and by that we can confirm if the disease that this pattern distinguish is active or not which is the target.
  
 
 ## Instruction to compile and run the source code
