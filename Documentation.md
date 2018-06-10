@@ -4,7 +4,8 @@
 What will your genome sequence tell you about your actual risk for certain diseases? DNA sequencing has identified difficult-to-diagnose diseases in humans. So the main target of our project is to detect the abnormal DNA mutations which might be harmful, affect a person's characteristics and suspects the presence of diseases. 
 so let's begin with some short notes about DNA sequence.
 ### Genome sequence
-![](DNA-Sequence.png) people are unique in large part because their genomes are unique. Most genome variations are relatively small and simple, the vast majority of the genome's sequence is the same from one person to the next, with the same genes in the same places. In other words, my genome is a pretty good approximation of yours, and if scientists sequenced your genome they would learn a lot about mine.
+![](DNA-Sequence.png)
+ people are unique in large part because their genomes are unique. Most genome variations are relatively small and simple, the vast majority of the genome's sequence is the same from one person to the next, with the same genes in the same places. In other words, my genome is a pretty good approximation of yours, and if scientists sequenced your genome they would learn a lot about mine.
 ### Genome variations
 During cell divition the genome sequence is said to be copied but maybe a wrong base is incorporated into the DNA sequence every once in a while, or a base or two might be left out or added, these variations aren't always harmful, they may not affect the person. variations that are located outside of genes—that is, the majority of genome variations—don't affect the way your body works.
 #### sources of variations
