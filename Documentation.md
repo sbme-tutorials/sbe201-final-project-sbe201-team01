@@ -1,4 +1,4 @@
-# **Final Project Documentation** <span style="color:blue">blue</span>
+# **Final Project Documentation**
 
 ## DNA mutations
 What will your genome sequence tell you about your actual risk for certain diseases? DNA sequencing has identified difficult-to-diagnose diseases in humans. So the main target of our project is to detect the abnormal DNA mutations which might be harmful, affect a person's characteristics and suspects the presence of diseases. 
@@ -83,7 +83,10 @@ the O/P of the transformation will be {ntt$oiuam}.
 ```
 ###### **NOTE** 
 * We use the $ sign to indicate the end of the string which will help us when we reverse the transformation.
-* we use the last coloumn specially 
+* we use the last coloumn specially because of the **last to front property** which includes that when we have the last coloumn we can retore the whole string by sorting it, for exmaple when we sort the last column we can get the first coloumn of the BWT.
+
+#### Implementation Burrows Wheeler Algorthim using Suffix array
+
 
 ## Applications of our algorithm
 ()
