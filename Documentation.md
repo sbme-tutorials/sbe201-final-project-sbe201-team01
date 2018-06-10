@@ -4,7 +4,7 @@
 What will your genome sequence tell you about your actual risk for certain diseases? DNA sequencing has identified difficult-to-diagnose diseases in humans. So the main target of our project is to detect the abnormal DNA mutations which might be harmful, affect a person's characteristics and suspects the presence of diseases. 
 so let's begin with some short notes about DNA sequence.
 ### Genome sequence
-people are unique in large part because their genomes are unique. Most genome variations are relatively small and simple, the vast majority of the genome's sequence is the same from one person to the next, with the same genes in the same places. In other words, my genome is a pretty good approximation of yours, and if scientists sequenced your genome they would learn a lot about mine.
+![](DNA-Sequence.jpg) people are unique in large part because their genomes are unique. Most genome variations are relatively small and simple, the vast majority of the genome's sequence is the same from one person to the next, with the same genes in the same places. In other words, my genome is a pretty good approximation of yours, and if scientists sequenced your genome they would learn a lot about mine.
 ### Genome variations
 During cell divition the genome sequence is said to be copied but maybe a wrong base is incorporated into the DNA sequence every once in a while, or a base or two might be left out or added, these variations aren't always harmful, they may not affect the person. variations that are located outside of genes—that is, the majority of genome variations—don't affect the way your body works.
 #### sources of variations
@@ -14,14 +14,16 @@ studying DNA sequence has many practical applications, from genome mapping to sc
 ### Screening for genetic diseases
 Diagnostic testing can be performed before birth or at any time during a person's life. 
 ### Diseases which can be detected through genome study
-- **phenylketonuria**: a genetic test is conducted at birth that can identify babies who miss a gene in their DNA codes for an enzyme that allows them to break down a specific amino acid called phenylalanine found in milk. If these individuals receive regular milk or milk products, the unbroken phenylalanine will accumulate and cause brain damage.
+- **phenylketonuria:** a genetic test is conducted at birth that can identify babies who miss a gene in their DNA codes for an enzyme that allows them to break down a specific amino acid called phenylalanine found in milk. If these individuals receive regular milk or milk products, the unbroken phenylalanine will accumulate and cause brain damage.
 
-- **Duchenne muscular dystrophy**: Muscle weakness; frequent falls; difficulty with motor skills (running, hopping, jumping); progressive difficulty walking (ability to walk may be lost by age 12); fatigue; intellectual retardation (possible); skeletal deformities; chest and back (scoliosis); muscle deformities (contractures of heels, legs; pseudohypertrophy of calf muscles). **DNA testing** is used to confirm the diagnosis; The muscle-specific isoform of the dystrophin gene is composed of 79 exons, and DNA testing and analysis can usually identify the specific type of mutation of the exon or exons that are affected.
+- **Duchenne muscular dystrophy:** Muscle weakness; frequent falls; difficulty with motor skills (running, hopping, jumping); progressive difficulty walking (ability to walk may be lost by age 12); fatigue; intellectual retardation (possible); skeletal deformities; chest and back (scoliosis); muscle deformities (contractures of heels, legs; pseudohypertrophy of calf muscles). **DNA testing** is used to confirm the diagnosis; The muscle-specific isoform of the dystrophin gene is composed of 79 exons, and DNA testing and analysis can usually identify the specific type of mutation of the exon or exons that are affected.
 
-- **Crohn's disease**: Inflammation confined to the colon; abdominal pain and bloody diarrhea; anal fistulae and peri-rectal abscesses can also occur.
- **Genetic mutations**: The first mutation found to be associated with Crohn's was a frameshift in the NOD2 gene (also known as the CARD15 gene), also other well documented genes which increase the risk of developing Crohn disease are ATG16L1, IL23R, IRGM, and SLC11A1.
+- **Crohn's disease:** Inflammation confined to the colon; abdominal pain and bloody diarrhea; anal fistulae and peri-rectal abscesses can also occur.
+ **Genetic mutations:** The first mutation found to be associated with Crohn's was a frameshift in the NOD2 gene (also known as the CARD15 gene), also other well documented genes which increase the risk of developing Crohn disease are ATG16L1, IL23R, IRGM, and SLC11A1.
 
-
+- **Alzheimer's disease:** it is a degenerative disease of the brain that causes dementia, which is a gradual loss of memory, judgment, and ability to function. This disorder usually appears in people older than age 65 - late onset -, but less common forms of the disease appear earlier in adulthood - early onset -.
+**early-onset Alzheimer disease:** most cases are caused by gene mutations that can be passed from parent to child.
+It's caused by any one of a number of different single-gene mutations on chromosomes 21, 14, and 1. Each of these mutations causes abnormal proteins to be formed. Mutations on chromosome 21 cause the formation of **abnormal amyloid precursor protein (APP)**. A mutation on chromosome 14 causes **abnormal presenilin 1 (PSEN1)** to be made, and a mutation on chromosome 1 leads to **abnormal presenilin 2 (PSEN2)**, When any of these genes is altered, large amounts of a toxic protein fragment called **amyloid beta peptide** are produced in the brain. This peptide can build up in the brain to form clumps called **amyloid plaques**, which are characteristic of Alzheimer disease. A buildup of toxic amyloid beta peptide and amyloid plaques may lead to the death of nerve cells and the progressive signs and symptoms of this disorder.
 
 
 ## Used Algorithm
@@ -98,8 +100,9 @@ the O/P of the transformation will be {ntt$oiuam}.
 3. [Phenylketonuria](https://science.howstuffworks.com/life/cellular-microscopic/dna8.htm)
 4. [other diseases](https://en.wikipedia.org/wiki/Genetic_testing#Specific_diseases)
 5. [crohn's disease](https://en.wikipedia.org/wiki/Crohn%27s_disease#Genetics)
-6. [Suffix array](https://www.geeksforgeeks.org/suffix-array-set-1-introduction/)
-7. [Burrows – Wheeler Data Transform Algorithm](https://www.geeksforgeeks.org/burrows-wheeler-data-transform-algorithm/)
-8. [Burrows-Wheeler Transform](https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform)
-9. [Using last Coloumn in BWT](https://softwareengineering.stackexchange.com/questions/314624/why-use-last-column-of-burrows-wheeler-transform/314629)
+6. [Alzheimer's disease](https://www.nia.nih.gov/health/alzheimers-disease-genetics-fact-sheet)
+7. [Suffix array](https://www.geeksforgeeks.org/suffix-array-set-1-introduction/)
+8. [Burrows – Wheeler Data Transform Algorithm](https://www.geeksforgeeks.org/burrows-wheeler-data-transform-algorithm/)
+9. [Burrows-Wheeler Transform](https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform)
+10. [Using last Coloumn in BWT](https://softwareengineering.stackexchange.com/questions/314624/why-use-last-column-of-burrows-wheeler-transform/314629)
 
