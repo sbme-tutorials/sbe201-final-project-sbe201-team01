@@ -5,7 +5,9 @@
 #include <string>
 #include <algorithm>
 #include <cmath>
+#include <stack>
 #include "suffix.hpp"
+using namespace std;
 namespace BWT
 
 {
@@ -21,7 +23,7 @@ std::vector<BWTLF> bwt(std::string text)
     std::vector<BWTLF> BWT_Array;
     std::vector<SA::suffix> m;
     std::vector<int> suffarray;
-    m=SA::getsuffixes(text);
+    m = SA::getsuffixes(text);
     suffarray = SA::suffixarray(m);
     for (int i = 0; i < n; i++)
     {
@@ -46,7 +48,6 @@ std::vector<char> last_column(std::string text)
     return z;
 }
 
-
 std::vector<BWTLF> firstcolumn(std::string text)
 {
     std::vector<BWTLF> v;
@@ -54,16 +55,15 @@ std::vector<BWTLF> firstcolumn(std::string text)
     std::sort(v.begin(), v.end(), [](BWTLF &a, BWTLF &b) {
         return a.x < b.x;
     });
-    
+
     return v;
 }
-
 
 std::vector<int> lasttofirst(std::vector<BWTLF> firstcolumn)
 
 {
     int j;
-    std::vector<int> LF;
+    std::vector<int> LF(firstcolumn.size());
     for (int i = 0; i < firstcolumn.size(); i++)
     {
         j = firstcolumn[i].index;
@@ -72,15 +72,12 @@ std::vector<int> lasttofirst(std::vector<BWTLF> firstcolumn)
     return LF;
 }
 
-
-
-
 void printint(std::vector<int> v)
 {
     for (int i = 0; i < v.size(); i++)
     {
 
-        std::cout <<  v[i] << std::endl;
+        std::cout << v[i] << std::endl;
     }
 }
 
@@ -93,8 +90,44 @@ void print(std::vector<BWTLF> v)
     }
 }
 
+int findpattern(std::vector<int> LF, std::vector<char> lastcolumn, std::stack<char> pattern)
+{
 
+    int top = 0;
+    int bottom = lastcolumn.size() - 1;
+    int topindex = -1;
+    int bottomindex;
 
+    while (top <= bottom)
+    {
+        std::cout<<"entering while loop"<<std::endl;
+        if (!pattern.empty())
+        {
+            char symbol = pattern.top();
+            pattern.pop();
+std::cout<<"entering for loop"<<std::endl;
+            for (int i = top; i <= bottom; i++)
+            {
+std::cout<<"entering "<<std::endl;
+                if (symbol == lastcolumn[i])
+                {
+                    if (topindex == -1)
+                    {
+                        topindex = i;
+                    }
+                    else
+                        bottomindex = i;
+
+                }
+            }
+
+           
+        }
+         top=LF[topindex];
+            bottom=LF[bottomindex];
+    }
+    return bottom-top+1 ;
+}
 
 } // namespace BWT
 
