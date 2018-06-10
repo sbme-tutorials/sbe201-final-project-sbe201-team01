@@ -23,6 +23,7 @@ Diagnostic testing can be performed before birth or at any time during a person'
 - **Crohn's disease:** Inflammation confined to the colon; abdominal pain and bloody diarrhea; anal fistulae and peri-rectal abscesses can also occur.
 
 - **Genetic mutations:** 
+
 ![](crohn.png)
 
 The first mutation found to be associated with Crohn's was a frameshift in the NOD2 gene (also known as the CARD15 gene), also other well documented genes which increase the risk of developing Crohn disease are ATG16L1, IL23R, IRGM, and SLC11A1.
