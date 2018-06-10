@@ -5,7 +5,8 @@ What will your genome sequence tell you about your actual risk for certain disea
 so let's begin with some short notes about DNA sequence.
 ### Genome sequence
 ![](DNA-Sequence.png)
- people are unique in large part because their genomes are unique. Most genome variations are relatively small and simple, the vast majority of the genome's sequence is the same from one person to the next, with the same genes in the same places. In other words, my genome is a pretty good approximation of yours, and if scientists sequenced your genome they would learn a lot about mine.
+
+People are unique in large part because their genomes are unique. Most genome variations are relatively small and simple, the vast majority of the genome's sequence is the same from one person to the next, with the same genes in the same places. In other words, my genome is a pretty good approximation of yours, and if scientists sequenced your genome they would learn a lot about mine.
 ### Genome variations
 During cell divition the genome sequence is said to be copied but maybe a wrong base is incorporated into the DNA sequence every once in a while, or a base or two might be left out or added, these variations aren't always harmful, they may not affect the person. variations that are located outside of genes—that is, the majority of genome variations—don't affect the way your body works.
 #### sources of variations
@@ -20,7 +21,10 @@ Diagnostic testing can be performed before birth or at any time during a person'
 - **Duchenne muscular dystrophy:** Muscle weakness; frequent falls; difficulty with motor skills (running, hopping, jumping); progressive difficulty walking (ability to walk may be lost by age 12); fatigue; intellectual retardation (possible); skeletal deformities; chest and back (scoliosis); muscle deformities (contractures of heels, legs; pseudohypertrophy of calf muscles). **DNA testing** is used to confirm the diagnosis; The muscle-specific isoform of the dystrophin gene is composed of 79 exons, and DNA testing and analysis can usually identify the specific type of mutation of the exon or exons that are affected.
 
 - **Crohn's disease:** Inflammation confined to the colon; abdominal pain and bloody diarrhea; anal fistulae and peri-rectal abscesses can also occur.
- **Genetic mutations:** The first mutation found to be associated with Crohn's was a frameshift in the NOD2 gene (also known as the CARD15 gene), also other well documented genes which increase the risk of developing Crohn disease are ATG16L1, IL23R, IRGM, and SLC11A1.
+ **Genetic mutations:** 
+![](crohn.png)
+
+The first mutation found to be associated with Crohn's was a frameshift in the NOD2 gene (also known as the CARD15 gene), also other well documented genes which increase the risk of developing Crohn disease are ATG16L1, IL23R, IRGM, and SLC11A1.
 
 - **Alzheimer's disease:** it is a degenerative disease of the brain that causes dementia, which is a gradual loss of memory, judgment, and ability to function. This disorder usually appears in people older than age 65 - late onset -, but less common forms of the disease appear earlier in adulthood - early onset -.
 **early-onset Alzheimer disease:** most cases are caused by gene mutations that can be passed from parent to child.
