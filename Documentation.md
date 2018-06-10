@@ -1,4 +1,4 @@
-# **Final Project Documentation**
+# **Final Project Documentation** <span style="color:blue">blue</span>
 
 ## DNA mutations
 What will your genome sequence tell you about your actual risk for certain diseases? DNA sequencing has identified difficult-to-diagnose diseases in humans. So the main target of our project is to detect the abnormal DNA mutations which might be harmful, affect a person's characteristics and suspects the presence of diseases. 
@@ -78,9 +78,12 @@ Using the word "mutation$" as an example.
 ```
  3. Finally, we get the last coloumn.
 ```c++
-the O/P of the transformation will be {**ntt$oiuam**}.
+the O/P of the transformation will be {ntt$oiuam}.
 
 ```
+###### **NOTE** 
+* We use the $ sign to indicate the end of the string which will help us when we reverse the transformation.
+* we use the last coloumn specially 
 
 ## Applications of our algorithm
 ()
@@ -95,4 +98,5 @@ the O/P of the transformation will be {**ntt$oiuam**}.
 6. [Suffix array](https://www.geeksforgeeks.org/suffix-array-set-1-introduction/)
 7. [Burrows – Wheeler Data Transform Algorithm](https://www.geeksforgeeks.org/burrows-wheeler-data-transform-algorithm/)
 8. [Burrows-Wheeler Transform](https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform)
+9. [Using last Coloumn in BWT](https://softwareengineering.stackexchange.com/questions/314624/why-use-last-column-of-burrows-wheeler-transform/314629)
 
