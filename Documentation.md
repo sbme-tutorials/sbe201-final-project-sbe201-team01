@@ -22,7 +22,7 @@ Diagnostic testing can be performed before birth or at any time during a person'
 
 - **Crohn's disease:** Inflammation confined to the colon; abdominal pain and bloody diarrhea; anal fistulae and peri-rectal abscesses can also occur.
 
- **Genetic mutations:** 
+- **Genetic mutations:** 
 ![](crohn.png)
 
 The first mutation found to be associated with Crohn's was a frameshift in the NOD2 gene (also known as the CARD15 gene), also other well documented genes which increase the risk of developing Crohn disease are ATG16L1, IL23R, IRGM, and SLC11A1.
@@ -128,7 +128,7 @@ the BWT will be {ntt$oiuam}, If we sort it alphabetically we get the first colum
 
 ## Applications of our algorithm
 **The main target of our project is to find if a certain pattern (which distinguish a disease as we mentioned before) is found in a given genome and also to get the number of repeats of this pattern ( if avaliable ).**
-In order to achieve this we:
+- In order to achieve this we:
 1. enter a given genome and divide it into suffixes to make the suffix array
 2. get the BWT (the last column) by applying this equation for each suffix **input_text[(suffix_arr[i] – 1 + n ) % n]** , where n is the number of elements in the suffix array.
 3. then we apply a search function to find the pattern in the genome and by that we can confirm if the disease that this pattern distinguish is active or not which is the target.
