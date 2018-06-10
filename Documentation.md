@@ -91,7 +91,41 @@ the O/P of the transformation will be {ntt$oiuam}.
 ```
 ###### **NOTE** 
 * We use the $ sign to indicate the end of the string which will help us when we reverse the transformation.
-* we use the last coloumn specially because of the **last to front property** which includes that when we have the last coloumn we can retore the whole string by sorting it, for exmaple when we sort the last column we can get the first coloumn of the BWT.
+* we use the last coloumn specially because of the **last to front property** which includes that when we have the last coloumn we can retore the whole string by sorting it, for exmaple when we sort the last column we can get the first coloumn of the BWT.( explained in details in the next paragrapgh)
+
+### Inverting Burrows Wheeler Transform
+A great advantage of using BWT is that we can get the original string by only having the last column of the transorfm, for example.
+```c++
+when we have the word **mutation**
+the BWT will be {ntt$oiuam}, If we sort it alphabetically we get the first column
+ n                     $
+ t                     a
+ t                     i
+ $  alphabetically     m
+ o   ---------->       n
+ i    Sorting          o
+ u                     t
+ a                     t
+ m                     u
+ so now we have the last and first cloumns. 
+
+```
+- then we put the first and last cloumns together and sort them alphabetically to get the first two cloumns of the transformation
+```c++
+ n$                             $m
+ ta                             at
+ ti                             io
+ $m                             mu
+ on       alphabetically        n$ 
+ io        ---------->          on     
+ ut          Sorting            ta  
+ at                             ti
+ mu                             ut
+ Now we have the first two coloumns of the transformation matrix. 
+ 
+```
+- then if we add the last cloumn beside the first two cloumns and sort them we will get the first three cloumns and so forth we can get the whole matrix or in other words the original string.
+
 
 ### Implementation Burrows Wheeler Algorthim using Suffix array
 
@@ -111,4 +145,18 @@ the O/P of the transformation will be {ntt$oiuam}.
 8. [Burrows – Wheeler Data Transform Algorithm](https://www.geeksforgeeks.org/burrows-wheeler-data-transform-algorithm/)
 9. [Burrows-Wheeler Transform](https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform)
 10. [Using last Coloumn in BWT](https://softwareengineering.stackexchange.com/questions/314624/why-use-last-column-of-burrows-wheeler-transform/314629)
+ n 
+ t
+ t
+ $
+ o
+ i
+ u
+ a
+ m
+
+   alphabetically 
+    ----------> 
+     Sorting 
+  
 
