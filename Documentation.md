@@ -96,7 +96,7 @@ the O/P of the transformation will be {ntt$oiuam}.
 ### Inverting Burrows Wheeler Transform
 A great advantage of using BWT is that we can get the original string by only having the last column of the transorfm, for example.
 ```c++
-when we have the word **mutation**
+when we have the word {mutation}
 the BWT will be {ntt$oiuam}, If we sort it alphabetically we get the first column
  n                     $
  t                     a
@@ -107,7 +107,7 @@ the BWT will be {ntt$oiuam}, If we sort it alphabetically we get the first colum
  u                     t
  a                     t
  m                     u
- so now we have the last and first cloumns. 
+ so now we have the last and first columns. 
 
 ```
 - then we put the first and last cloumns together and sort them alphabetically to get the first two cloumns of the transformation
@@ -121,17 +121,22 @@ the BWT will be {ntt$oiuam}, If we sort it alphabetically we get the first colum
  ut          Sorting            ta  
  at                             ti
  mu                             ut
- Now we have the first two coloumns of the transformation matrix. 
+ Now we have the first two columns of the transformation matrix. 
  
 ```
-- then if we add the last cloumn beside the first two cloumns and sort them we will get the first three cloumns and so forth we can get the whole matrix or in other words the original string.
+- then if we add the last column beside the first two cloumns and sort them we will get the first three cloumns and so forth we can get the whole matrix or in other words the original string.
 
 
 ### Implementation Burrows Wheeler Algorthim using Suffix array
 
-
 ## Applications of our algorithm
-()
+**The main target of our project is to find if a certain pattern (which distinguish a disease as we mentioned before) is found in a given genome and also to get the number of repeats of this pattern ( if avaliable ).**
+In order to achieve this we:
+1. enter a given genome and divide it into suffixes to make the suffix array
+2. get the BWT (the last column) by applying this equation for each suffix **input_text[(suffix_arr[i] – 1 + n ) % n]** , where n is the number of elements in the suffix array.
+3. then we apply a search function to find the pattern in the genome and by that we can confirm if the disease that this pattern distinguish is active or not which is the target
+ 
+
 ## Instruction to compile and run the source code
 
 ## References:
@@ -145,18 +150,6 @@ the BWT will be {ntt$oiuam}, If we sort it alphabetically we get the first colum
 8. [Burrows – Wheeler Data Transform Algorithm](https://www.geeksforgeeks.org/burrows-wheeler-data-transform-algorithm/)
 9. [Burrows-Wheeler Transform](https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform)
 10. [Using last Coloumn in BWT](https://softwareengineering.stackexchange.com/questions/314624/why-use-last-column-of-burrows-wheeler-transform/314629)
- n 
- t
- t
- $
- o
- i
- u
- a
- m
-
-   alphabetically 
-    ----------> 
-     Sorting 
+ 
   
 
