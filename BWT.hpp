@@ -81,6 +81,15 @@ void printint(std::vector<int> v)
     }
 }
 
+void printchar(std::vector<char> v)
+{
+    for (int i = 0; i < v.size(); i++)
+    {
+
+        std::cout << v[i] << std::endl;
+    }
+}
+
 void print(std::vector<BWTLF> v)
 {
     for (int i = 0; i < v.size(); i++)
@@ -98,35 +107,34 @@ int findpattern(std::vector<int> LF, std::vector<char> lastcolumn, std::stack<ch
     int topindex = -1;
     int bottomindex;
 
-    while (top <= bottom)
+    while (top <= bottom && !pattern.empty())
     {
-        std::cout<<"entering while loop"<<std::endl;
-        if (!pattern.empty())
+        std::cout << "entering while loop" << std::endl;
+
+        char symbol = pattern.top();
+        pattern.pop();
+
+        for (int i = top; i <= bottom; i++)
         {
-            char symbol = pattern.top();
-            pattern.pop();
-std::cout<<"entering for loop"<<std::endl;
-            for (int i = top; i <= bottom; i++)
+
+            if (symbol == lastcolumn[i])
             {
-std::cout<<"entering "<<std::endl;
-                if (symbol == lastcolumn[i])
+                if (topindex == -1)
                 {
-                    if (topindex == -1)
-                    {
-                        topindex = i;
-                    }
-                    else
-                        bottomindex = i;
-
+                    topindex = i;
                 }
-            }
 
-           
+                bottomindex = i;
+            }
         }
-         top=LF[topindex];
-            bottom=LF[bottomindex];
+        std::cout << "topidx= " << topindex << std::endl;
+        std::cout << "bottomidx= " << bottomindex << std::endl;
+
+        top = LF[topindex];
+        bottom = LF[bottomindex];
+        topindex = -1;
     }
-    return bottom-top+1 ;
+    return bottom - top + 1;
 }
 
 } // namespace BWT
