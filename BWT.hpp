@@ -98,11 +98,10 @@ int findpattern(std::vector<int> LF, std::vector<char> lastcolumn, std::stack<ch
     int topindex = -1;
     int bottomindex;
 
-    while (top <= bottom)
+    while (top <= bottom && !pattern.empty())
     {
         std::cout<<"entering while loop"<<std::endl;
-        if (!pattern.empty())
-        {
+
             char symbol = pattern.top();
             pattern.pop();
 std::cout<<"entering for loop"<<std::endl;
@@ -122,7 +121,6 @@ std::cout<<"entering "<<std::endl;
             }
 
            
-        }
          top=LF[topindex];
             bottom=LF[bottomindex];
     }
