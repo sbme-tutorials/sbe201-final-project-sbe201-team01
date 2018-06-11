@@ -11,11 +11,12 @@ int main()
     std::string x = "panamabananas$";
     std::vector<char> lastcolumn;
     lastcolumn = BWT::last_column(x);
+    BWT::printchar(lastcolumn);
     std::vector<BWT::BWTLF> fircolumn;
     fircolumn = BWT::firstcolumn(x);
     std::vector<int> LF;
     LF = BWT::lasttofirst(fircolumn);
-
+BWT::printint(LF);
 std::stack<char>pattern;
 
 pattern.push('a');
