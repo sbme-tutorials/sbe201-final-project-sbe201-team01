@@ -66,7 +66,8 @@ Using the word "mutation$" as an example.
          $   m                            mutation$
        n       u       Cyclic rotations   $mutation
      o           t        ---------->     n$mutatio 
-       i      a                           on$mutati
+       i  
+    a                           on$mutati
           t                               ion$mutat
                                           tion$muta
                                           ation$mut
@@ -136,7 +137,12 @@ the BWT will be {ntt$oiuam}, If we sort it alphabetically we get the first colum
  
 
 ## Instruction to compile and run the source code
-
+1. Suffix array test file 
+- g++ sufftest.cpp -std=c++11 
+- ./a.out
+2. Suffix array test file 
+- g++ BWTtest.cpp -std=c++11 
+- ./a.out
 ## References:
 1. [Genome variations](http://www.genomenewsnetwork.org/resources/whats_a_genome/Chp4_1.shtml)
 2. [Duchenne muscular dystrophy](https://en.wikipedia.org/wiki/Duchenne_muscular_dystrophy#DNA_test)
